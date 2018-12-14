@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maks_Place.GUI.SignUp">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="5" BackgroundColor="{DynamicResource backgroundColor3}" >
+            <StackLayout Orientation="Horizontal" />
+            <Entry Placeholder="First Name" TextColor="{DynamicResource textColor5}"/>
+            <Entry Placeholder="Last Name" TextColor="{DynamicResource textColor5}"/>
+
+            <Entry Placeholder="Email" Keyboard="Email" TextColor="{DynamicResource textColor5}"/>
+            <Entry Placeholder="Password" IsPassword="True" TextColor="{DynamicResource textColor5}"/>
+            <Entry Placeholder="Confirm Password" IsPassword="True" TextColor="{DynamicResource textColor5}"/>
+            <Label Text="Date Of Birth" />
+            <DatePicker Date="14 June 1999" Format="dd MMM yyyy" MinimumDate="1 Jan 1900" MaximumDate="01 Jan 2018" TextColor="{DynamicResource textColor5}"></DatePicker>
+            <Label Text="Address" TextColor="{DynamicResource textColor5}"></Label>
+            <Editor></Editor>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Receive EXCITING notifications of new menu items and news?" TextColor="{DynamicResource textColor4}"></Label>
+                <Switch IsToggled="False"></Switch>
+            </StackLayout>
+            <Button Text="Sign Up" BackgroundColor="{DynamicResource backgroundColor2}"></Button>
+            <Label Text="Already have account? Sign In" TextColor="{DynamicResource textColor4}"></Label>
+            <Button Text="Log In" BackgroundColor="{DynamicResource backgroundColor2}"  x:Name="btnLogIn" Clicked="ButtonLogIn_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

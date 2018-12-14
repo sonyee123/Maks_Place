@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maks_Place.GUI.Accounts">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="{DynamicResource backgroundColor3}">
+            <Entry Placeholder="Email" Keyboard="Email" TextColor="{DynamicResource textColor5}"/>
+            <Entry Placeholder="Password" IsPassword="True"  TextColor="{DynamicResource textColor5}"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Save Password?"  TextColor="{DynamicResource textColor4}"/>
+                <Switch IsToggled="False"/>
+            </StackLayout>
+            <Button Text="Log In" BackgroundColor="{DynamicResource backgroundColor2}"/>
+            <Button Text="Sign Up" x:Name="btnSignUp" Clicked="ButtonSignUp_Clicked" BackgroundColor="{DynamicResource backgroundColor2}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
